@@ -3,10 +3,10 @@
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install \
-    build-essential python3-dev libssl-dev libpq-dev \
+    build-essential python3-dev python3-venv libssl-dev libpq-dev \
     bzip2 xz-utils zlib1g libxml2-dev libxslt1-dev libpopt0 \
     libgpgme11 libdevmapper1.02.1 libguestfs-tools \
-    vim neovim
+    git vim neovim zsh zsh-sytax-highlighting
 
 # setup gh cli
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
@@ -22,6 +22,3 @@ sudo apt install -y nodejs
 # setup vimrc
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
-
-
-
