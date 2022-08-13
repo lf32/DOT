@@ -27,6 +27,9 @@
 	changed = yellow bold
 	untracked = red bold
 
+[commit]
+	template = ~/.gittemplate
+
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
