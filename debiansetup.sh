@@ -3,7 +3,7 @@
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install \
-    build-essential python3-dev python3-venv libssl-dev libpq-dev \
+    build-essential curl python3-dev python3-venv libssl-dev libpq-dev \
     bzip2 xz-utils zlib1g libxml2-dev libxslt1-dev libpopt0 \
     libgpgme11 libdevmapper1.02.1 libguestfs-tools \
     git vim neovim zsh zsh-sytax-highlighting
@@ -22,3 +22,8 @@ sudo apt install -y nodejs
 # setup vimrc
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+# setup zsh
+curl -sO "https://github.com/lf32/DOT/raw/main/zsh/.zshenv"
+curl -sO "https://github.com/lf32/DOT/raw/main/zsh/.zshrc"
+
