@@ -6,7 +6,7 @@ if [ "$1" = "g" ]; then
 elif [ "$1" = "l" ]; then
   lynx "https://lolbas-project.github.io/#"
 else
-  echo "Usage: view-project [gtfobins|lolbas]"
+  echo "Usage: ./surfbins.sh [gtfobins|lolbas]"
 fi
 
 # To use it
