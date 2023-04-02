@@ -40,3 +40,11 @@ alias sxit="sxiv -t "
 # enable hightlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export GPG_TTY=$(tty)
+
+
+
+# powerlevel10k theme
+source ~/.powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
